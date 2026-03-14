@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  prompt-router:
+    build: .
+    env_file: .env
+    stdin_open: true
+    tty: true
+    command: python app.py
